@@ -6,15 +6,15 @@ Installation
 =======
 Add following line to your Gemfile
 
-    gem 'persistable'
+    gem 'persistable_mongoid'
 
   or
 
-    gem 'persistable', git: 'https://github.com/mshahzadtariq/persistable'
+    gem 'persistable_mongoid', git: 'https://github.com/mshahzadtariq/persistable_mongoid'
 
   or
 
-    gem install persistable
+    gem install persistable_mongoid
 
 And include this module to the model for which you want to enable soft delete and recovery feature
 

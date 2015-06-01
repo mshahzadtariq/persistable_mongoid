@@ -1,9 +1,9 @@
+= Mongoid Persistable 
 Persist Deleted Records for Mongoid
-===============
 Soft delete functionality for Mongoid ORM so you may recover records at later stage.
 
-Installation
-=======
+== Installation
+
 Add following line to your Gemfile
 
     gem 'persistable_mongoid'
@@ -28,8 +28,7 @@ And include this module to the model for which you want to enable soft delete an
     
 and that is all. 
 
-Usage
-=======
+== Usage
 
 Persist sensitive data with options to recover data.
     
@@ -57,3 +56,11 @@ To recover records, call recover method on object
 To permanently delete record from system/database, call delete method
 
     object.delete
+
+== Contributing
+
+1. Fork it
+2. Create your feature branch (`git checkout -b my-new-feature`)
+3. Commit your changes (`git commit -am 'Added some feature'`)
+4. Push to the branch (`git push origin my-new-feature`)
+5. Create new Pull Request

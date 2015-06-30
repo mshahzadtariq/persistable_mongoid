@@ -5,6 +5,8 @@ module Mongoid
     included do
 
       field :deleted, type: Boolean, default: false
+      field :deleted_at, type: Time
+      field :recovered_at, type: Time
 
       default_scope -> { where(:deleted.in => [nil, false]) }
 
@@ -13,10 +15,12 @@ module Mongoid
 
       def destroy
         self.set(:deleted => true)
+        self.set(:deleted_at, Time.now)
       end
 
       def recover
         self.set(:deleted => false)
+        self.set(:recovered_at, Time.now)
       end
 
     end

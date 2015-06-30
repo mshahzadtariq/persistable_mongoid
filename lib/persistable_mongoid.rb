@@ -15,12 +15,12 @@ module MST
 
       def destroy
         self.set(:deleted => true)
-        self.set(:deleted_at, Time.now)
+        self.set(:deleted_at => Time.now)
       end
 
       def recover
         self.set(:deleted => false)
-        self.set(:recovered_at, Time.now)
+        self.set(:recovered_at => Time.now)
       end
 
     end

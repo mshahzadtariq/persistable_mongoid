@@ -1,4 +1,4 @@
-module Mongoid
+module MST
   module Persistable
     extend ActiveSupport::Concern
 

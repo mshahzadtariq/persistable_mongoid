@@ -20,7 +20,7 @@ And include this module to the model for which you want to enable soft delete an
 
     class MyModel
       include Mongoid::Document
-      include Mongoid::Persistable
+      include MST::Persistable
       
       ......
       
